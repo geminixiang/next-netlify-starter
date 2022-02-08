@@ -20,7 +20,7 @@ main {
 }
 
 code {
-  background: #fafafa;
+  background: #eae9e9;
   border-radius: 5px;
   padding: 0.75rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
@@ -32,4 +32,21 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.item {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+}
+.item + .item {
+  margin-left: 15px;
 }
